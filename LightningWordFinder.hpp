@@ -27,11 +27,12 @@ public:
         size_t longestLen = 0;
         char currentChar = '.';
         char nextChar = '.';
+        size_t currentSize = 0;
 
         while (baseIdx < textLen) {
             currentChar = text[baseIdx];
             if (isLetter(currentChar)) {
-                size_t currentSize = 1;
+                currentSize = 1;
 
                 size_t nextIdx = baseIdx + 1;
                 nextChar = text[nextIdx];
